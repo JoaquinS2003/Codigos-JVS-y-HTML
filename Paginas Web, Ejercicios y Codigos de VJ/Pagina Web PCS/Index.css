@@ -1,0 +1,569 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.social-bar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color: yellow;
+    padding: 5px 15px;
+    height: 20px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    grid-template-rows: 150px;
+    align-items: center;
+    background-color: #01020b;
+    color: #fff;
+    padding: 10px 20px; 
+}
+
+.header-button {
+    background-color: #01020b; 
+    color: rgb(255, 255, 255); 
+    border: 1px solid #ffcc00; 
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 30px;
+    width: 200px;
+    font-weight: 800;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.header-button:hover {
+    background-color: #ffcc00;
+    color: #404253;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    width: 100%;
+    height: 3px;
+    background: white;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+
+.nav ul li {
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #ffea00;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+
+.redes-sociales {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.redes-sociales img {
+    width: 15px;
+    height: auto;
+    color: white;
+    margin-left: 10px;
+}
+
+.redes-sociales a {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.redes-sociales a:hover {
+    color: #ffcc00;
+}
+
+.main-grid1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    
+}
+
+.main-grid1-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    border: 4px solid yellow;
+    border-radius: 5%;
+    padding: 20px;
+}
+
+.main-grid1-text h1 {
+    color: yellowgreen;
+    font-size: 2.5rem;
+    width: 60%;
+}
+
+.main-grid1-text p {
+    color: rgb(214, 194, 7);
+    width: 60%;
+}
+
+.main-grid1-text button {
+    background-color: yellow;
+    padding: 15px 25px;
+    border-radius: 10px;
+    transition: background-color 0.4s, transform 0.4s;
+}
+
+.main-grid1-text button:hover {
+    background-color: yellowgreen;
+    transform: scale(1.1);
+}
+
+.main-grid1 img {
+    width: 100%;
+    border: 4px solid yellow;
+    border-radius: 10%;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.main-grid1 img:hover {
+    transform: scale(1.1);
+    filter: brightness(2.5);
+}
+
+
+.Table {
+    background-color: rgb(2, 2, 56);
+    padding: 20px;
+}
+
+.Table h1 {
+    color: yellowgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 4px solid yellow;
+    padding: 10px;
+    text-align: center;
+}
+
+.Table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 4px solid yellowgreen;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(2, 2, 56);
+    color: yellow;
+}
+
+.Table button {
+    background-color: yellow;
+    padding: 15px 25px;
+    border-radius: 10px;
+    transition: background-color 0.4s, transform 0.4s;
+    margin-top: 20px;
+    position: relative;
+    left: 44%;
+}
+
+.Table button:hover {
+    background-color: yellowgreen;
+    transform: scale(1.1);
+}
+
+
+.main-grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.main-grid2-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.main-grid2-text h1 {
+    color: yellowgreen;
+    font-size: 2.5rem;
+}
+
+.main-grid2-text p {
+    color: rgb(214, 194, 7);
+}
+
+.main-grid2 button {
+    background-color: yellow;
+    padding: 15px 25px;
+    border-radius: 10px;
+    transition: background-color 0.4s, transform 0.4s;
+    font-size: 80px;
+    
+    
+}
+
+.main-grid2 button:hover {
+    background-color: yellowgreen;
+    transform: scale(1.1);
+}
+
+
+.main-grid3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    background-color: black;
+    padding: 20px;
+}
+
+.main-grid3 img {
+    width: 100%; 
+    height: 600px; 
+    border: 4px solid #ccc;
+    transition: transform 0.3s ease;
+}
+
+.main-grid3 img:hover {
+    transform: scale(1.1);
+    filter: brightness(2.5);
+}
+
+
+.main-grid4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background-color: rgba(117,200,218,255);
+    color: white;
+    padding: 20px;
+}
+
+
+form{
+    background-color: white;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 25px;
+    width: 85%;
+    padding: 10px;
+    position: relative;
+    left: 20px;
+    gap: 20px;
+    flex-direction: column;
+    }
+
+.column1 {
+    position: relative;
+    top: 20%;
+}
+
+.column1 form{
+    height: 350px;
+}
+    
+    .column1 h2{
+        position: relative;
+        left: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .column1 button{
+        background-color: rgb(29, 9, 209);
+        padding: 10px 20px;
+        color: white;
+        border-radius: 10px;
+        width: 30%;
+    }
+
+.footer {
+    background-color: rgb(1, 1, 41);
+    color: #fff;
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.social-icons,
+.footer-content,
+.footer-menu,
+.subscription-form {
+    border: 1px solid;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.social-icons a img {
+    width: 70px;
+    height: auto;
+    background-color: #ffcc00;
+}
+
+.subscription-form form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+   
+}
+
+.subscription-form input,
+.subscription-form button {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.subscription-form button {
+    background-color: yellow;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.4s, transform 0.4s;
+}
+
+.subscription-form button:hover {
+    background-color: yellowgreen;
+    transform: scale(1.1);
+}
+
+.footer-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-menu ul li {
+    margin-bottom: 5px;
+}
+
+.footer-menu ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-menu ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 480px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .social-bar {
+        display: flex;
+        justify-content: center;
+        background-color: yellow;
+        padding: 5px 10px;
+        height: auto;
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        align-items: center;
+        background-color: #01020b;
+        color: #fff;
+        padding: 10px;
+    }
+
+    .header-button {
+        margin-left: 10px;
+        padding: 8px 15px;
+        font-size: 0.9rem;
+        width: auto;
+    }
+
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    .menu-icon span {
+        width: 100%;
+        height: 3px;
+        background: white;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #01020b;
+        width: 100%;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 20px;
+        justify-self: center;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    #menu-toggle:checked + .menu-icon + .nav {
+        display: flex;
+    }
+    .nav ul li {
+        margin-right: 0;
+    }
+
+    .nav ul li a {
+        text-decoration: none;
+        color: #ffea00;
+        font-weight: bold;
+        font-size: 0.9rem;
+        transition: color 0.3s ease;
+    }
+
+    .nav ul li a:hover {
+        color: #ffcc00;
+    }
+
+    #menu-toggle:checked + .menu-icon span:nth-child(1),
+    #menu-toggle:checked + .menu-icon span:nth-child(3) {
+        transform: rotate(45deg);
+    }
+
+    #menu-toggle:checked + .menu-icon span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .redes-sociales {
+        justify-content: center; 
+    }
+
+    .redes-sociales img {
+        width: 20px; 
+        margin-left: 5px; 
+    }
+
+    .main-grid1, .main-grid2, .main-grid3, .main-grid4 {
+        grid-template-columns: 1fr; 
+        gap: 10px; 
+        padding: 10px; 
+    }
+
+    .main-grid1-text h1, .main-grid2-text h1 {
+        font-size: 2rem; 
+        width: 100%;
+    }
+
+    .main-grid1-text p, .main-grid2-text p {
+        font-size: 0.9rem; 
+        width: 100%; 
+    }
+
+    .main-grid1-text button, .main-grid2 button {
+        padding: 10px 20px; 
+        font-size: 1rem; 
+    }
+
+    .Table {
+        padding: 10px; 
+    }
+
+    .Table h1 {
+        font-size: 1.5rem; 
+    }
+
+    .Table button {
+        width: 100%; 
+        left: 0; 
+    }
+
+    .main-grid4 {
+        display: none; 
+    }
+
+    .footer {
+        padding: 10px; 
+        text-align: center; 
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 10px; 
+    }
+
+    .social-icons a img {
+        width: 50px; 
+    }
+
+    .subscription-form input, .subscription-form button {
+        width: 90%; 
+    }
+}
