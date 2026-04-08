@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Pagos</title>
+    <link rel="stylesheet" href="tablas.css">
+</head>
+<body>
+
+<h2>Calculadora de Pagos</h2>
+
+
+<form id="formularioEmpleado">
+    <label for="nombre">Nombre y Apellido:</label>
+    <input type="text" id="nombre" required>
+
+    <label for="area">Área de Trabajo:</label>
+    <select id="area" required>
+        <option value="Produccion">Producción</option>
+        <option value="Envase">Envase</option>
+        <option value="Almacen">Almacén</option>
+    </select>
+
+    <label for="horas">Horas Trabajadas:</label>
+    <input type="number" id="horas" required>
+
+    <button type="button" onclick="agregarEmpleado()">Agregar Empleado</button>
+</form>
+
+<table id="tabla">
+    <tr>
+        <th>Nombre y Apellido</th>
+        <th>Área de Trabajo</th>
+        <th>Horas Trabajadas</th>
+        <th>Básico</th>
+        <th>Bonificación</th>
+        <th>Total a Pagar (Soles)</th>
+        <th>Total a Pagar (Dólares)</th>
+        <th>Pago a ESSALUD</th>
+    </tr>
+    
+</table>
+
+<script src="calculos.js"></script>
+</body>
+</html>
